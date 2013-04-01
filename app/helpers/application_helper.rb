@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def fulltitle(title) 
+  def full_title(title) 
     deftitle = "SampleApp"
     if !title.empty?
       "#{deftitle} | #{title}"
