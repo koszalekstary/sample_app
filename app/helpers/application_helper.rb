@@ -1,6 +1,6 @@
 module ApplicationHelper
   def full_title(title) 
-    deftitle = "SampleApp"
+    deftitle = "Ruby on Rails Tutorial Sample App"
     if !title.empty?
       "#{deftitle} | #{title}"
     else
