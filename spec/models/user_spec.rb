@@ -103,4 +103,14 @@ describe User do
 
     it { should_not be_valid }
   end
+
+  describe "email should be saved with downcase" do
+    before { @user.email = "EfeE@wp.pD" }
+    let (:emailBefore) { @user.email }
+
+    it "should be saved with downcase" do 
+      @user.save
+      @user.reload.email.should == emailBefore.downcase
+    end
+  end
 end
